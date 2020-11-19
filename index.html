@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadania Tablice</title>
+</head>
+<body>
+    <script>
+        
+        const tablica1 = ["awe","eww","vsdh","syg","agfad","avad","dsg","acda","afdc","sbds"];
+        console.log("Tablica do zadania pierwszego: ");
+        tablica1.forEach(element => {
+            console.log(element);
+        });
+
+
+
+        const tablica2 = tablica1.reverse();
+        console.log("Tablica do zadania drugiego: ");
+        tablica2.forEach(element => {
+            console.log(element);
+        });
+
+    
+
+        const tablica3 = [];
+        for(let i=1; i<20; i++) {
+            if(i%3==0 & i%5==0) tablica3.push(i);
+        }
+        console.log("Tablica do zadania trzeciego: ");
+        tablica3.forEach(element => {
+            console.log(element);
+        });
+
+ 
+
+        const tablica4 = [];
+        let doTablicy = "";
+        for(let i=0; i<5; i++) {
+            doTablicy = prompt(`Proszę podać ${i+1} element tablicy`);
+            tablica4.unshift(doTablicy);
+        }
+        console.log("Tablica do zadania czwartego: ");
+        tablica4.forEach(element => {
+            console.log(element);
+        });
+     
+
+
+          const tablica5 = [...tablica3,...tablica4];
+          console.log("Tablica do zadania piątego: ");
+        tablica5.forEach(element => {
+            console.log(element);
+        });
+
+
+
+
+        const tablica6 = tablica5.sort();
+        console.log("Tablica do zadania szóstego: ");
+        tablica6.forEach(element => {
+            console.log(element);
+        });
+
+
+
+
+        const tablica7 = tablica6.slice(3,6);
+        console.log("Tablica do zadania siódmego: ");
+        tablica7.forEach(element => {
+            console.log(element);
+        });
+    </script>
+</body>
+</html>
